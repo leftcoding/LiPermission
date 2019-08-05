@@ -1,16 +1,16 @@
-package androidx.permission;
+package andorid.permisson;
 
 import android.app.Activity;
 import android.content.Context;
 import android.content.ContextWrapper;
+import android.permission.option.BootOption;
+import android.permission.option.Option;
+import android.permission.source.ActivitySource;
+import android.permission.source.ContextSource;
+import android.permission.source.FragmentSource;
+import android.permission.source.Source;
 
 import androidx.fragment.app.Fragment;
-import androidx.permission.option.BootOption;
-import androidx.permission.option.Option;
-import androidx.permission.source.ActivitySource;
-import androidx.permission.source.ContextSource;
-import androidx.permission.source.FragmentSource;
-import androidx.permission.source.Source;
 
 import com.yanzhenjie.permission.AndPermission;
 

@@ -1,4 +1,4 @@
-package android.permission.aop;
+package androidx.permission.aop;
 
 import androidx.permission.request.RequestExecutor;
 

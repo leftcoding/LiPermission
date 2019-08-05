@@ -1,13 +1,12 @@
-package androidx.permission.launcher;
+package andorid.permisson.launcher;
 
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Build;
+import android.permission.source.Source;
 import android.provider.Settings;
-
-import androidx.permission.source.Source;
 
 public class PlatformLauncher {
     private static final String MARK = Build.MANUFACTURER.toLowerCase();

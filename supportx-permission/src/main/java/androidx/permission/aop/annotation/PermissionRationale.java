@@ -1,14 +1,11 @@
-package android.permission.aop.annotation;
+package androidx.permission.aop.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-@Target({ElementType.TYPE, ElementType.METHOD})
+@Target(ElementType.METHOD)
 @Retention(RetentionPolicy.RUNTIME)
-public @interface PermissionRequest {
-    String[] permissions();
-
-    boolean isNeed() default false;
+public @interface PermissionRationale {
 }

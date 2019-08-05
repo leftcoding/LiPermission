@@ -1,10 +1,10 @@
-package androidx.permission.option;
+package andorid.permisson.option;
 
-import androidx.permission.andpermission.RAndPermission;
-import androidx.permission.launcher.AllLauncher;
-import androidx.permission.launcher.Launcher;
-import androidx.permission.request.Request;
-import androidx.permission.source.Source;
+import android.permission.andpermission.RAndPermission;
+import android.permission.launcher.AllLauncher;
+import android.permission.launcher.Launcher;
+import android.permission.request.Request;
+import android.permission.source.Source;
 
 public class BootOption implements Option {
     private Source source;

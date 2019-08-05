@@ -1,8 +1,7 @@
-package androidx.permission.andpermission;
+package andorid.permisson.andpermission;
 
 import android.content.Context;
-
-import androidx.permission.request.RationaleListener;
+import android.permission.request.RationaleListener;
 
 import com.yanzhenjie.permission.Rationale;
 import com.yanzhenjie.permission.RequestExecutor;
@@ -18,7 +17,7 @@ public class RuntimeRationale implements Rationale<List<String>> {
         this.runnable = rationaleListener;
     }
 
-    private final androidx.permission.request.RequestExecutor requestExecutor = new androidx.permission.request.RequestExecutor() {
+    private final android.permission.request.RequestExecutor requestExecutor = new android.permission.request.RequestExecutor() {
         @Override
         public void execute() {
             if (executor != null) {

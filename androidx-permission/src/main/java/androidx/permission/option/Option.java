@@ -1,7 +1,7 @@
 package androidx.permission.option;
 
-import android.permission.launcher.Launcher;
-import android.permission.request.Request;
+import androidx.permission.launcher.Launcher;
+import androidx.permission.request.Request;
 
 public interface Option {
     Request runtime();

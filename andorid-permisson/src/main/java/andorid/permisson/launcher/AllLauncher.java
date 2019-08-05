@@ -1,7 +1,6 @@
-package androidx.permission.launcher;
+package andorid.permisson.launcher;
 
-
-import androidx.permission.source.Source;
+import android.permission.source.Source;
 
 public class AllLauncher implements Launcher {
     private final Source source;

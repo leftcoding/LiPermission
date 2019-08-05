@@ -1,14 +1,10 @@
-package android.permission.aop;
+package androidx.permission.aop;
 
 import android.app.Activity;
 import android.app.Application;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.os.Bundle;
-import android.permission.aop.annotation.PermissionCallback;
-import android.permission.aop.annotation.PermissionRationale;
-import android.permission.aop.annotation.PermissionRequest;
-import android.permissionRequest.R;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
@@ -17,6 +13,10 @@ import android.widget.Toast;
 import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.Fragment;
 import androidx.permission.LiPermission;
+import androidx.permission.R;
+import androidx.permission.aop.annotation.PermissionCallback;
+import androidx.permission.aop.annotation.PermissionRationale;
+import androidx.permission.aop.annotation.PermissionRequest;
 import androidx.permission.request.RationaleListener;
 import androidx.permission.request.RequestCallback;
 import androidx.permission.request.RequestExecutor;
@@ -201,7 +201,9 @@ public class PermissionAspect {
             public void onActivityDestroyed(Activity activity) {
                 final String canonicalName = getCanonicalName(activity);
                 Log.d(">>", ">>onActivityDestroyed:" + canonicalName + ",sourceActivity:" + sourceCanonicalName);
-                maps.remove(canonicalName);
+                if (maps.containsKey(canonicalName) && TextUtils.equals(sourceCanonicalName, canonicalName)) {
+                    maps.remove(canonicalName);
+                }
             }
         });
     }

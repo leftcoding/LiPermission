@@ -1,10 +1,13 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
-
+ext {
+    permissionx = "2.0.1"
+    androidx = "1.0.2"
+}
 buildscript {
     repositories {
         google()
         jcenter()
-        
+
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.4.0'
@@ -20,7 +23,7 @@ allprojects {
     repositories {
         google()
         jcenter()
-        
+
     }
 }
 

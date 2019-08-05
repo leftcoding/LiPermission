@@ -1,4 +1,4 @@
-package android.permission.aop.annotation;
+package androidx.permission.aop.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

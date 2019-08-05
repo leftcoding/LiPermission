@@ -1,10 +1,9 @@
-package androidx.permission.andpermission;
+package andorid.permisson.andpermission;
 
 import android.content.Context;
-
-import androidx.permission.request.RationaleListener;
-import androidx.permission.request.Request;
-import androidx.permission.request.RequestCallback;
+import android.permission.request.RationaleListener;
+import android.permission.request.Request;
+import android.permission.request.RequestCallback;
 
 import com.yanzhenjie.permission.Action;
 import com.yanzhenjie.permission.AndPermission;
