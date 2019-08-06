@@ -8,11 +8,12 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/andorid-permisson" />
+            <option value="$PROJECT_DIR$/android-permission" />
+            <option value="$PROJECT_DIR$/android-permission-aop" />
             <option value="$PROJECT_DIR$/androidx-permission" />
+            <option value="$PROJECT_DIR$/androidx-permission-aop" />
             <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/support-permission" />
-            <option value="$PROJECT_DIR$/supportx-permission" />
+            <option value="$PROJECT_DIR$/permission-api" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">supportx_permission_aop</string>
+    <string name="permission_message_format">为保证您正常、安全的使用%1$S，需要获取相关的权限，请允许</string>
+    <string name="permission_allow">去允许</string>
+    <string name="permission_out">退出</string>
+    <string name="permission_cancel">取消</string>
+    <string name="permission_setting">去设置</string>
+    <string name="permission_title_tips">提示</string>
+    <string name="permission_denied">授权失败</string>
+</resources>

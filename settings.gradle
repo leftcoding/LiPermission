@@ -1,1 +1,1 @@
-include ':app', ':support-permission', ':androidx-permission', ':andorid-permisson', ':supportx-permission'
+include ':app', ':androidx-permission', ':android-permission', ':permission-api', ':androidx-permission-aop', ':android-permission-aop'

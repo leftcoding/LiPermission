@@ -1,13 +1,14 @@
 package android.permission;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.permission.andpermission.Permissions;
 
 import android.os.Bundle;
-import android.permission.aop.annotation.PermissionRequest;
+import android.permission.api.PermissionRequest;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
+
+import andorid.permisson.andpermission.Permissions;
 
 public class MainActivity extends AppCompatActivity {
     Button permission;
