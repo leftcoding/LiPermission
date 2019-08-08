@@ -3,7 +3,6 @@ apply from: "config.gradle"
 //apply from: "permission-config.gradle"
 
 ext {
-    permissionx = "2.0.1"
     androidx = "1.0.2"
 }
 buildscript {
@@ -27,9 +26,6 @@ allprojects {
         google()
         jcenter()
         mavenCentral()
-        maven {
-            url "https://dl.bintray.com/left/maven/"
-        }
     }
 }
 
