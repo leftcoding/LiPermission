@@ -1,6 +1,8 @@
 ### LiPermission
 
 > 实现方式是基于 [Aspectjx](https://github.com/HujiangTechnology/gradle_plugin_android_aspectjx)，有兴趣的可以去看看。只要一个简单的注解，就可以实现 android 6.0 动态的权限请求。权限库基于 [Andpermission](https://github.com/yanzhenjie/AndPermission)，不过原库不满足自己的需求，基于库上进行了修改。
+### 效果图
+[效果图](..images/1.gif)
 
 ### 使用方法
 
