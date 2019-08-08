@@ -1,14 +1,13 @@
 package android.permission;
 
-import androidx.appcompat.app.AppCompatActivity;
 
+import android.left.permission.base.Permissions;
 import android.os.Bundle;
-import android.permission.api.PermissionRequest;
+import android.permission.aop.api.PermissionRequest;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
-
-import andorid.permisson.andpermission.Permissions;
 
 public class MainActivity extends AppCompatActivity {
     Button permission;
@@ -31,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         super.onStart();
     }
 
-    @PermissionRequest(permissions = {Permissions.WRITE_EXTERNAL_STORAGE})
+    @PermissionRequest(permissions = {Permissions.WRITE_EXTERNAL_STORAGE}, toFrontRequest = true)
     private void test() {
         Toast.makeText(MainActivity.this, "授权成功", Toast.LENGTH_SHORT).show();
     }

@@ -1,0 +1,30 @@
+apply plugin: 'com.android.library'
+apply plugin: 'android-aspectjx'
+
+android {
+    compileSdkVersion 28
+
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    api 'android.left.permission:permission:1.0.0'
+//    api project(path: ':android-permission')
+//    api project(path: ':permission-api')
+}
+apply from: '../maven-jcenter.gradle'

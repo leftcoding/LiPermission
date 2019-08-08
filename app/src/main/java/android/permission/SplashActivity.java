@@ -1,14 +1,12 @@
 package android.permission;
 
 import android.content.Intent;
+import android.left.permission.base.Permissions;
 import android.os.Bundle;
-import android.permission.api.PermissionRequest;
+import android.permission.aop.api.PermissionRequest;
+import android.support.annotation.Nullable;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
-
-import andorid.permisson.andpermission.Permissions;
 
 public class SplashActivity extends AppCompatActivity {
     @Override
@@ -21,15 +19,10 @@ public class SplashActivity extends AppCompatActivity {
                 checkPermission();
             }
         });
-        checkPermission();
+//        checkPermission();
     }
 
-    @Override
-    protected void onStart() {
-        super.onStart();
-    }
-
-    @PermissionRequest(permissions = {Permissions.WRITE_EXTERNAL_STORAGE}, repeat = true)
+    @PermissionRequest(permissions = {Permissions.WRITE_EXTERNAL_STORAGE}, repeat = true, toFrontRequest = true)
     private void checkPermission() {
         startActivity(new Intent(this, MainActivity.class));
     }
