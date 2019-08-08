@@ -33,12 +33,6 @@ android {
 implementation 'android.left.permission:annotation:1.0.1'
 ```
 
-##### 如果，不想使用注解，可以使用权限的基础库，LiPermission 已经包含了基础库，可以不用额外添加
-
-```groovy
-api 'android.left.permission:permission:1.0.0'
-```
-
 ##### 4. 开始使用
 
 申请系统权限，需要事先在`AndroidManifest.xml` 中，进行权限申请
