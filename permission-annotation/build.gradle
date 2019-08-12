@@ -23,7 +23,7 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'com.android.support:appcompat-v7:28.0.0'
-    api 'android.left.permission:permission:1.0.2'
+    api 'android.leftcoding:permission:1.0.2'
 //    api project(path: ':android-permission')
 //    api project(path: ':permission-api')
 }

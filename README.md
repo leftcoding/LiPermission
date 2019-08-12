@@ -32,7 +32,7 @@ android {
 ##### 3. 项目文件 build.gradle 文件中，添加 
 
 ```java
-implementation 'android.left.permission:permission-annotation:1.0.2'
+implementation 'android.leftcoding:permission-annotation:1.0.2'
 ```
 
 ##### 4. 开始使用

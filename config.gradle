@@ -6,7 +6,7 @@ ext {
 
     bintray = [
             version       : "1.0.2", // 指定库的版本号
-            group         : "android.left.permission", // 库的group名，确定好之后不能修改
+            group         : "android.leftcoding", // 库的group名，确定好之后不能修改
 
             siteUrl       : 'https://github.com/leftcoding/LiPermission', // 项目开源地址
             gitUrl        : 'https://github.com/leftcoding/LiPermission.git', // 项目git地址
