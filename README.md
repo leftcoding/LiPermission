@@ -4,7 +4,8 @@
 ### 效果图
 ![image](images/1.gif)
 
-### 使用方法，如果不想使用注解方法，可以使用另一种方法来实现动态申请权限[Permission](Permission-README.md)
+### 使用方法
+> 如果不想使用注解方法，可以使用另一种方法来实现动态申请权限[Permission](Permission-README.md)
 
 ##### 1. 在项目根目录的 build.gradle 文件中，添加 `classpath 'com.hujiang.aspectjx:gradle-android-plugin-aspectjx:2.0.4'`
 
