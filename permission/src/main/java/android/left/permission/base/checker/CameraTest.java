@@ -34,11 +34,7 @@ class CameraTest implements PermissionTest {
     public boolean test() throws Throwable {
         Camera camera = null;
         try {
-            camera = Camera.open();
-            Camera.Parameters parameters = camera.getParameters();
-            camera.setParameters(parameters);
-            camera.setPreviewCallback(PREVIEW_CALLBACK);
-            camera.startPreview();
+            camera = mayOpenCamera();
             return true;
         } catch (Throwable e) {
             PackageManager packageManager = mContext.getPackageManager();
@@ -50,6 +46,22 @@ class CameraTest implements PermissionTest {
                 camera.release();
             }
         }
+    }
+
+    /**
+     * 尝试打开摄像头，rk3328 android 使用Camera.open()，会跳转失败页面，尝试使用 Camera.open(0)
+     */
+    private Camera mayOpenCamera() {
+        Camera camera;
+        camera = Camera.open();
+        if (camera == null) {
+            camera = Camera.open(0);
+        }
+        Camera.Parameters parameters = camera.getParameters();
+        camera.setParameters(parameters);
+        camera.setPreviewCallback(PREVIEW_CALLBACK);
+        camera.startPreview();
+        return camera;
     }
 
     private static final Camera.PreviewCallback PREVIEW_CALLBACK = new Camera.PreviewCallback() {

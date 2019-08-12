@@ -162,7 +162,7 @@ class MRequest implements PermissionRequest, RequestExecutor, BridgeRequest.Call
      * Get denied permissions.
      */
     private static List<String> getDeniedPermissions(PermissionChecker checker, Source source, String... permissions) {
-        List<String> deniedList = new ArrayList<>(1);
+        List<String> deniedList = new ArrayList<>(0);
         for (String permission : permissions) {
             if (!checker.hasPermission(source.getContext(), permission)) {
                 deniedList.add(permission);

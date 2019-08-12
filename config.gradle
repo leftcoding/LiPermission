@@ -1,11 +1,11 @@
 ext {
     plugins = [
-            maven      : 'com.github.dcendents.android-maven',
-            bintray    : 'com.jfrog.bintray'
+            maven  : 'com.github.dcendents.android-maven',
+            bintray: 'com.jfrog.bintray'
     ]
 
     bintray = [
-            version       : "1.0.1", // 指定库的版本号
+            version       : "1.0.2", // 指定库的版本号
             group         : "android.left.permission", // 库的group名，确定好之后不能修改
 
             siteUrl       : 'https://github.com/leftcoding/LiPermission', // 项目开源地址
@@ -28,3 +28,7 @@ ext {
             bintrayLicense: "Apache-2.0" // 指定bintray上的开源协议
     ]
 }
+
+// example
+// ./gradlew clean install
+// ./gradlew bintrayUpload

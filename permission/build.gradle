@@ -17,6 +17,10 @@ android {
         }
     }
 
+    lintOptions {
+        abortOnError false
+    }
+
 }
 
 dependencies {
@@ -26,3 +30,4 @@ dependencies {
     api 'com.android.support:support-fragment:28.0.0'
 }
 //apply from: '../maven-jcenter.gradle'
+//apply from: 'https://raw.githubusercontent.com/leftcoding/JCenter/master/maven.gradle'
